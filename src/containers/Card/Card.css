@@ -1,0 +1,11 @@
+.card-container{
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	height: 33.3vh;
+	background: blue;
+	user-select: none;
+}
+.card-image{
+	width: 120px;
+}

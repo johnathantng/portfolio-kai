@@ -1,0 +1,6 @@
+.home-container{
+}
+.home-row{
+	display: flex;
+	flex-direction: row;
+}
