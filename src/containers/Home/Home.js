@@ -24,14 +24,20 @@ class Home extends Component {
 					<Card 
 						cardStyle={{ background: '#C2C8DE', flex: 1, alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }} 
 						cardImage={ BoxOne }
+						poseAnimationInit={ 'init' }
+						poseAnimationFinal={ 'sway' }
 					/>
 					<Card 
 						cardStyle={{ background: 'white' }}
 						cardImage={ BoxTwo }
+						poseAnimationInit={ 'init' }
+						poseAnimationFinal={ 'scroll' }
 					/>
 					<Card 
 						cardStyle={{ background: '#C4ADBF', flex: 1, alignItems: 'center', justifyContent: 'center' }}
 						cardImage={ BoxThree }
+						poseAnimationInit={ 'init' }
+						poseAnimationFinal={ 'enlarge' }
 					/>
 					<Card cardStyle={{ background: '#C2C8DE' }}
 						cardImage={ null }
@@ -42,6 +48,8 @@ class Home extends Component {
 					<Card 
 						cardStyle={{ background: '#AF9C98', flex: 1, justifyContent: 'flex-end' }}
 						cardImage={ BoxFive }
+						poseAnimationInit={ 'slide' }
+						poseAnimationFinal={ 'init' }
 					/>
 					<Card 
 						cardStyle={{ background: '#352E30' }}
@@ -56,6 +64,8 @@ class Home extends Component {
 					<Card 
 						cardStyle={{background: '#B8ADCF', flex: 1, alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
 						cardImage={ BoxEight }
+						poseAnimationInit={ 'init' }
+						poseAnimationFinal={ 'sway' }
 					/>
 				</div>
 				<div className='home-row'>
@@ -67,14 +77,20 @@ class Home extends Component {
 					<Card 
 						cardStyle={{ background: '#B8ADCF', flex: 1, alignItems: 'center', justifyContent: 'center' }} 
 						cardImage={ BoxTen }
+						poseAnimationInit={ 'hidden' }
+						poseAnimationFinal={ 'pop' }
 					/>
 					<Card 
 						cardStyle={{ background: 'white', flex: 1, alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }} 
 						cardImage={ BoxEleven }
+						poseAnimationInit={ 'init' }
+						poseAnimationFinal={ 'sway' }
 					/>
 					<Card 
 						cardStyle={{ background: '#352E30', flex: 1, justifyContent: 'flex-end', alignItems: 'flex-end' }}
 						cardImage={ BoxTwelve }
+						poseAnimationInit={ 'slide' }
+						poseAnimationFinal={ 'init' }
 					/>
 				</div>
 			</div>

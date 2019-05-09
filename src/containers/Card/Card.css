@@ -5,6 +5,9 @@
 	height: 33.3vh;
 	background: blue;
 	user-select: none;
+	overflow: hidden;
+}
+.animation-container{
 }
 .card-image{
 	width: 120px;
