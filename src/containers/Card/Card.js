@@ -21,13 +21,14 @@ class Card extends Component {
 		}
 
 		render(){
-		const { cardStyle, cardImage, visibility, poseAnimationInit, poseAnimationFinal } = this.props;
+		const { onRouteChange, route, cardStyle, cardImage, visibility, poseAnimationInit, poseAnimationFinal } = this.props;
 		return(
 			<div 
 				className='card-container' 
 				style={cardStyle} 
 				onMouseOver={ this.mouseOver }
 				onMouseOut={ this.mouseOut }
+				onClick={() => onRouteChange(`${route}`)}
 			>
 				<Pose
 					style={{pointerEvents: 'none'}}

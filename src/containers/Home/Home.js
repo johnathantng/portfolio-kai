@@ -18,6 +18,7 @@ import BoxTwelve from '../../images/home/enjoy.png';
 
 class Home extends Component {
 	render() {
+		const { onRouteChange } = this.props;
 		return(
 			<div className='home-container'>
 				<div className='home-row'>
@@ -26,22 +27,30 @@ class Home extends Component {
 						cardImage={ BoxOne }
 						poseAnimationInit={ 'init' }
 						poseAnimationFinal={ 'sway' }
+						onRouteChange={ onRouteChange }
+						route={ 'about me' }
 					/>
 					<Card 
 						cardStyle={{ background: 'white' }}
 						cardImage={ BoxTwo }
 						poseAnimationInit={ 'init' }
 						poseAnimationFinal={ 'scroll' }
+						onRouteChange={ onRouteChange }
+						route={ 'home' }
 					/>
 					<Card 
 						cardStyle={{ background: '#C4ADBF', flex: 1, alignItems: 'center', justifyContent: 'center' }}
 						cardImage={ BoxThree }
 						poseAnimationInit={ 'init' }
 						poseAnimationFinal={ 'enlarge' }
+						onRouteChange={ onRouteChange }
+						route={ 'home' }
 					/>
 					<Card cardStyle={{ background: '#C2C8DE' }}
 						cardImage={ null }
 						visibility={{ visibility: 'hidden' }}
+						onRouteChange={ onRouteChange }
+						route={ 'home' }
 					/>
 				</div>
 				<div className='home-row'>
@@ -50,22 +59,30 @@ class Home extends Component {
 						cardImage={ BoxFive }
 						poseAnimationInit={ 'slide' }
 						poseAnimationFinal={ 'init' }
+						onRouteChange={ onRouteChange }
+						route={ 'home' }
 					/>
 					<Card 
 						cardStyle={{ background: '#352E30' }}
 						cardImage={ null }
 						visibility={{ visibility: 'hidden' }}
+						onRouteChange={ onRouteChange }
+						route={ 'home' }
 					/>
 					<Card 
 						cardStyle={{ backgroundImage: 'url(' + BoxSeven + ')', backgroundSize: 'cover' }}
 						cardImage={ null }
 						visibility={{ visibility: 'hidden' }}
+						onRouteChange={ onRouteChange }
+						route={ 'home' }
 					/>
 					<Card 
 						cardStyle={{background: '#B8ADCF', flex: 1, alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
 						cardImage={ BoxEight }
 						poseAnimationInit={ 'init' }
 						poseAnimationFinal={ 'sway' }
+						onRouteChange={ onRouteChange }
+						route={ 'home' }
 					/>
 				</div>
 				<div className='home-row'>
@@ -73,24 +90,32 @@ class Home extends Component {
 						cardStyle={{ backgroundImage: 'url(' + BoxNine + ')', backgroundSize: 'cover' }}
 						cardImage={ null }
 						visibility={{ visibility: 'hidden' }}
+						onRouteChange={ onRouteChange }
+						route={ 'home' }
 					/> 
 					<Card 
 						cardStyle={{ background: '#B8ADCF', flex: 1, alignItems: 'center', justifyContent: 'center' }} 
 						cardImage={ BoxTen }
 						poseAnimationInit={ 'hidden' }
 						poseAnimationFinal={ 'pop' }
+						onRouteChange={ onRouteChange }
+						route={ 'home' }
 					/>
 					<Card 
 						cardStyle={{ background: 'white', flex: 1, alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }} 
 						cardImage={ BoxEleven }
 						poseAnimationInit={ 'init' }
 						poseAnimationFinal={ 'sway' }
+						onRouteChange={ onRouteChange }
+						route={ 'home' }
 					/>
 					<Card 
 						cardStyle={{ background: '#352E30', flex: 1, justifyContent: 'flex-end', alignItems: 'flex-end' }}
 						cardImage={ BoxTwelve }
 						poseAnimationInit={ 'slide' }
 						poseAnimationFinal={ 'init' }
+						onRouteChange={ onRouteChange }
+						route={ 'home' }
 					/>
 				</div>
 			</div>

@@ -3,7 +3,6 @@
 	flex-direction: column;
 	width: 25%;
 	height: 33.3vh;
-	background: blue;
 	user-select: none;
 	overflow: hidden;
 }

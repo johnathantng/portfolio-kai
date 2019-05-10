@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import './App.css';
 
 //PAGES IMPORTS
+import Navigation from '../Navigation/Navigation';
 import Home from '../Home/Home';
+import About from '../About/About';
 
 const initialRoute = {
 	route: 'home'
@@ -18,9 +21,18 @@ class App extends Component {
 	}
 
 	render() {
+		const { route } = this.state;
 		return(
 			<div>
-				<Home />
+				<Navigation onRouteChange={ this.onRouteChange } />
+				{route === 'home'
+					? <Home onRouteChange={ this.onRouteChange } /> 
+					: (
+							route === 'about me'
+							? <About />
+							: <Home onRouteChange={ this.onRouteChange } />
+						)
+				}
 			</div>
 		);
 	}
