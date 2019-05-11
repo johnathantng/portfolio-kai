@@ -5,6 +5,7 @@ import './App.css';
 import Navigation from '../Navigation/Navigation';
 import Home from '../Home/Home';
 import About from '../About/About';
+import Contact from '../Contact/Contact';
 
 const initialRoute = {
 	route: 'home'
@@ -30,7 +31,7 @@ class App extends Component {
 					: (
 							route === 'about me'
 							? <About />
-							: <Home onRouteChange={ this.onRouteChange } />
+							: <Contact />
 						)
 				}
 			</div>

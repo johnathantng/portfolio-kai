@@ -107,7 +107,7 @@ class Home extends Component {
 						poseAnimationInit={ 'init' }
 						poseAnimationFinal={ 'sway' }
 						onRouteChange={ onRouteChange }
-						route={ 'home' }
+						route={ 'let\'s get connected!' }
 					/>
 					<Card 
 						cardStyle={{ background: '#352E30', flex: 1, justifyContent: 'flex-end', alignItems: 'flex-end' }}
