@@ -8,9 +8,41 @@ class Form extends Component {
 			message: '',
 			email: '',
 			sent: false,
-			buttonText: 'send email'
+			buttonText: 'Send Email'
 		}
 	}
+
+	formSubmit = (e) => {
+		e.preventDefault()
+
+		this.state({
+			buttonText: '...sending'
+		})
+
+		let data = {
+			name: this.state.name,
+			email: this.state.email,
+			message: this.state.message
+		}
+
+		axios.post('API_URI', data)
+		.then( res => {
+			this.setState({ sent: true }, this.resetForm())
+		})
+		.catch( () => {
+			console.log('Message not sent')
+		})
+	}
+
+	resetForm = () => {
+		this.setState({
+			name: '',
+			message: '',
+			email: '',
+			buttonText: 'Message Sent'
+		})
+	}
+
 	render(){
 	return(
 		<form className="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
