@@ -26,7 +26,7 @@ class Form extends Component {
 			message: this.state.message
 		}
 
-		axios.post('API_URI', data)
+		axios.post('https://create-react-app-1an5ourcj.now.sh', data)
 		.then( res => {
 			this.setState({ sent: true }, this.resetForm())
 		})
