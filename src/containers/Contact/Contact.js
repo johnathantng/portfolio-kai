@@ -20,6 +20,7 @@ class Contact extends Component {
 			isMounted: false
 		}
 	}
+	//test
 
 	componentDidMount() {
 		this.setState({ isMounted: !this.state.isMounted })
