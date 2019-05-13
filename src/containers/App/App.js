@@ -5,6 +5,7 @@ import './App.css';
 import Navigation from '../Navigation/Navigation';
 import Home from '../Home/Home';
 import About from '../About/About';
+import Work from '../Work/Work';
 import Contact from '../Contact/Contact';
 
 const initialRoute = {
@@ -31,8 +32,16 @@ class App extends Component {
 					: (
 							route === 'about me'
 							? <About />
-							: <Contact />
-						)
+							: (
+								route === 'my work'
+								? <Work onRouteChange={ this.onRouteChange } />
+								: (
+									route === 'let\'s get connected!'
+									? <Contact />
+									: <Home onRouteChange={ this.onRouteChange } />
+									)
+								)
+							)
 				}
 			</div>
 		);

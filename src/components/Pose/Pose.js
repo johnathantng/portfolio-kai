@@ -1,8 +1,11 @@
 import posed from 'react-pose';
 
 const Pose = posed.div({
+	horOut: { x: '100%' },
 	init: { x: 0, y: 0, scale: 1 },
 	hidden: { scale: 0.1 },
+	invisible: { opacity: 0 },
+	visible: { opacity: 1 },
 	pop: {
 		scale: 0,
 		transition: ({ from, to }) => ({

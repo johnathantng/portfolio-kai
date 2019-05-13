@@ -29,6 +29,7 @@ class Home extends Component {
 						poseAnimationFinal={ 'sway' }
 						onRouteChange={ onRouteChange }
 						route={ 'about me' }
+						stateRoute={ 'home' }
 					/>
 					<Card 
 						cardStyle={{ background: 'white' }}
@@ -37,6 +38,7 @@ class Home extends Component {
 						poseAnimationFinal={ 'scroll' }
 						onRouteChange={ onRouteChange }
 						route={ 'home' }
+						stateRoute={ 'home' }
 					/>
 					<Card 
 						cardStyle={{ background: '#C4ADBF', flex: 1, alignItems: 'center', justifyContent: 'center' }}
@@ -45,12 +47,13 @@ class Home extends Component {
 						poseAnimationFinal={ 'enlarge' }
 						onRouteChange={ onRouteChange }
 						route={ 'home' }
+						stateRoute={ 'home' }
 					/>
 					<Card cardStyle={{ background: '#C2C8DE' }}
-						cardImage={ null }
 						visibility={{ visibility: 'hidden' }}
 						onRouteChange={ onRouteChange }
 						route={ 'home' }
+						stateRoute={ 'home' }
 					/>
 				</div>
 				<div className='home-row'>
@@ -61,20 +64,21 @@ class Home extends Component {
 						poseAnimationFinal={ 'init' }
 						onRouteChange={ onRouteChange }
 						route={ 'home' }
+						stateRoute={ 'home' }
 					/>
 					<Card 
 						cardStyle={{ background: '#352E30' }}
-						cardImage={ null }
 						visibility={{ visibility: 'hidden' }}
 						onRouteChange={ onRouteChange }
 						route={ 'home' }
+						stateRoute={ 'home' }
 					/>
 					<Card 
 						cardStyle={{ backgroundImage: 'url(' + BoxSeven + ')', backgroundSize: 'cover' }}
-						cardImage={ null }
 						visibility={{ visibility: 'hidden' }}
 						onRouteChange={ onRouteChange }
 						route={ 'home' }
+						stateRoute={ 'home' }
 					/>
 					<Card 
 						cardStyle={{background: '#B8ADCF', flex: 1, alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
@@ -82,16 +86,17 @@ class Home extends Component {
 						poseAnimationInit={ 'init' }
 						poseAnimationFinal={ 'sway' }
 						onRouteChange={ onRouteChange }
-						route={ 'home' }
+						route={ 'my work' }
+						stateRoute={ 'home' }
 					/>
 				</div>
 				<div className='home-row'>
 					<Card 
 						cardStyle={{ backgroundImage: 'url(' + BoxNine + ')', backgroundSize: 'cover' }}
-						cardImage={ null }
 						visibility={{ visibility: 'hidden' }}
 						onRouteChange={ onRouteChange }
 						route={ 'home' }
+						stateRoute={ 'home' }
 					/> 
 					<Card 
 						cardStyle={{ background: '#B8ADCF', flex: 1, alignItems: 'center', justifyContent: 'center' }} 
@@ -100,6 +105,7 @@ class Home extends Component {
 						poseAnimationFinal={ 'pop' }
 						onRouteChange={ onRouteChange }
 						route={ 'home' }
+						stateRoute={ 'home' }
 					/>
 					<Card 
 						cardStyle={{ background: 'white', flex: 1, alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }} 
@@ -108,6 +114,7 @@ class Home extends Component {
 						poseAnimationFinal={ 'sway' }
 						onRouteChange={ onRouteChange }
 						route={ 'let\'s get connected!' }
+						stateRoute={ 'home' }
 					/>
 					<Card 
 						cardStyle={{ background: '#352E30', flex: 1, justifyContent: 'flex-end', alignItems: 'flex-end' }}
@@ -116,6 +123,7 @@ class Home extends Component {
 						poseAnimationFinal={ 'init' }
 						onRouteChange={ onRouteChange }
 						route={ 'home' }
+						stateRoute={ 'home' }
 					/>
 				</div>
 			</div>
