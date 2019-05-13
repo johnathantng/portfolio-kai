@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './Contact.css';
 
+//PAGE IMPORTS
+import Form from '../Form/Form.js';
+
 //IMAGE IMPORTS
 import Letter from '../../images/contact/letter.png';
 import LinkedIn from '../../images/contact/linkedin.png';
@@ -41,7 +44,7 @@ class Contact extends Component {
 					pose={ isMounted ? 'final' : 'init' }
 				>
 					<div className='form-container'>
-
+						<Form />
 					</div>
 				</SlideDown>
 			</div>
