@@ -23,8 +23,6 @@ class Navigation extends Component {
 
 	buttonClick = () => {
 		const hamburgerHandler = () => {
-			console.log(MenuIcon);
-			console.log(document.getElementById('hamburger').src);
 			if (this.state.hamburgerEaten === true){
 					setTimeout(()=>{document.getElementById('hamburger').src = `${ MenuIcon }`}, 500);
 				} else {

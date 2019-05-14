@@ -21,8 +21,11 @@
 	width: 50%;
 	height: 100vh;
 }
+.portfolio-image-wrapper{
+	width: 50%;
+}
 .portfolio-image{
-	width: 30%;
+	width: 100%;
 }
 .right-half{
 	display: flex;

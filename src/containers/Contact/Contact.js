@@ -20,7 +20,6 @@ class Contact extends Component {
 			isMounted: false
 		}
 	}
-	//test
 
 	componentDidMount() {
 		this.setState({ isMounted: !this.state.isMounted })
@@ -37,7 +36,13 @@ class Contact extends Component {
 					<div className='social-media-container'>
 						<img id='social-icons' alt='phone-icon' src={ Phone } />
 						<img id='social-icons' alt='letter-icon' src={ Letter } />
-						<img id='social-icons' alt='linked-in-icon' src={ LinkedIn } />
+						<img 
+							id='social-icons' 
+							style={{ cursor: 'pointer' }}
+							alt='linked-in-icon' 
+							src={ LinkedIn } 
+							onClick={() => window.open('https://www.linkedin.com/in/kai-c-790520185/') }
+						/>
 					</div>
 				</SlideUp>
 				<SlideDown
@@ -45,6 +50,7 @@ class Contact extends Component {
 					pose={ isMounted ? 'final' : 'init' }
 				>
 					<div className='form-container'>
+						<p className='form-heading'>help me, help you</p>
 						<Form />
 					</div>
 				</SlideDown>
