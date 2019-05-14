@@ -7,6 +7,9 @@
 	margin-right: 50px;
 	cursor: pointer;
 }
+.hamburger-icon:focus{
+	outline: 0;
+}
 @media (max-width: 520px) {
 	.hamburger-icon{
 		width: 10%;

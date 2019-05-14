@@ -21,10 +21,11 @@ p{
 /*FOR PHONES*/
 @media (max-width: 520px) {
 	.navbar-container{
-		width: 46%;
+		width: 45%;
 		align-items: flex-end;
 		padding-right: 100px;
 	}
 	.navbar-list{
+		font-size: 1.3em; 
 	}
 }
