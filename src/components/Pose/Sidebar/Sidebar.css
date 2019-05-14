@@ -18,3 +18,13 @@
 p{
 	cursor: pointer;
 }
+/*FOR PHONES*/
+@media (max-width: 520px) {
+	.navbar-container{
+		width: 46%;
+		align-items: flex-end;
+		padding-right: 100px;
+	}
+	.navbar-list{
+	}
+}

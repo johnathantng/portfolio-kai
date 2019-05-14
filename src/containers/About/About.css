@@ -46,3 +46,23 @@
 	background: #C2C8DE;
 	user-select: none;
 }
+/*FOR PHONES*/
+@media (max-width: 520px) {
+	#information-text{
+		font-size: 1em!important;
+		text-align: center!important;
+	}
+	.about-me-container{
+		flex-direction: column;
+	}
+	.left-half{
+		height: 40vh;
+	}
+	.right-half{
+		height: 50vh;
+		width: 100%;
+	}
+	.information-container{
+		padding: 100px;
+	}
+}

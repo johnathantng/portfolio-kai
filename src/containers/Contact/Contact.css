@@ -50,3 +50,31 @@
 	background: #C4ADBF;
 	user-select: none;
 }
+/*FOR PHONES*/
+@media (max-width: 520px) {
+	#information-text{
+		font-size: 1em!important;
+		text-align: center!important;
+	}
+	#social-icons{
+		width: 50%!important;
+	}
+	.contact-container{
+		flex-direction: column-reverse;
+	}
+	.contact-left-half{
+		height: 20vh;
+	}
+	.contact-right-half{
+		height: 70vh;
+		width: 100%;
+	}
+	.information-container{
+		padding: 100px;
+	}
+	.social-media-container{
+		width: 100%;
+		justify-content: flex-end;
+		padding-left: 10px;
+	}
+}

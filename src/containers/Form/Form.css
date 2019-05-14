@@ -36,4 +36,8 @@
 	padding: 10px;
 	box-shadow: 0 5px 20px rgba(0,0,0,.25);
 	cursor: pointer;
+}@media (max-width: 520px) {
+	.contact-form{
+		width: 90%;
+	}
 }
