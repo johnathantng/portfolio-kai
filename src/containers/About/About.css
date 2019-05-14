@@ -49,7 +49,7 @@
 /*FOR PHONES*/
 @media (max-width: 520px) {
 	#information-text{
-		font-size: 1em!important;
+		font-size: .5em!important;
 		text-align: center!important;
 	}
 	.about-me-container{
