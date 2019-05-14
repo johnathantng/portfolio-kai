@@ -30,6 +30,7 @@
 	justify-content: space-between;
 	align-items: flex-end;
 	width: 65%;
+	user-select: none;
 }
 .contact-right-half{
 	display: flex;

@@ -23,6 +23,7 @@
 }
 .portfolio-image-wrapper{
 	width: 50%;
+	user-select: none;
 }
 .portfolio-image{
 	width: 100%;
