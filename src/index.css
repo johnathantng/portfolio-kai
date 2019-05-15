@@ -7,8 +7,3 @@ body{
 	width: 100%;
 	position: fixed;
 }
-@media (max-width: 520px){
-	body{
-		overflow: hidden;
-	}
-}

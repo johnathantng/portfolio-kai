@@ -1,6 +1,6 @@
 {
   "name": "portfolio-kai",
-  "homepage": "http://johnathantng.github.io/portfolio-kai",
+  "homepage": "./",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
