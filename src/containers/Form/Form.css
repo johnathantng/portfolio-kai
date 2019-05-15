@@ -40,4 +40,7 @@
 	.contact-form{
 		width: 90%;
 	}
+	.form-heading{
+		margin: 0;
+	}
 }
