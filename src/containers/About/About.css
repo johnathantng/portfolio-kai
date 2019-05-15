@@ -21,12 +21,8 @@
 	width: 50%;
 	height: 100vh;
 }
-.portfolio-image-wrapper{
-	width: 50%;
-	user-select: none;
-}
 .portfolio-image{
-	width: 100%;
+	width: 70%;
 }
 .right-half{
 	display: flex;
@@ -49,12 +45,14 @@
 /*FOR PHONES*/
 @media (max-width: 520px) {
 	#information-heading{
+		font-size: 1.3em!important;
 		width: 100%!important;
 		text-align: center!important;
 	}
 	#information-text{
-		font-size: .5em!important;
+		font-size: 1em!important;
 		text-align: center!important;
+		line-height: 1.2!important;
 		width: 100%!important;
 	}
 	.about-me-container{

@@ -6,7 +6,6 @@ import Kai from '../../images/about/kaiselfie.png';
 
 //POSE IMPORTS
 import SlideUp from '../../components/Pose/SlideUp/SlideUp';
-import SlideDown from '../../components/Pose/SlideDown/SlideDown';
 import Pose from '../../components/Pose/Pose';
 
 class About extends Component {
@@ -14,39 +13,27 @@ class About extends Component {
 		super(props);
 		this.state = {
 			isMounted: false,
-			isHovered: false
+			popEnter: false
 		}
 	}
 
 	componentDidMount() {
 		this.setState({ isMounted: !this.state.isMounted })
-	}
-
-	hoverHandler = () => {
-		this.setState({ isHovered: !this.state.isHovered });
-	}
-
-	unhoverHandler = () => {
-		this.setState({ isHovered: !this.state.isHovered });
+		setTimeout(() => {
+			this.setState({ popEnter: !this.state.popEnter })
+		}, 1000);
 	}
 
 	render() {
-		const { isMounted, isHovered } = this.state;
+		const { isMounted, popEnter } = this.state;
 		return(
 			<div className='about-me-container'>
-				<SlideDown
+				<Pose
 					className='left-half'
-					pose={ isMounted ? 'final' : 'init' }
+					pose={ popEnter ? 'pop' : 'gone'}
 				>
-					<Pose 
-						className='portfolio-image-wrapper'
-						onMouseOver={ this.hoverHandler }
-						onMouseOut={ this.unhoverHandler }
-						pose={ isHovered ? 'enlarge' : 'init' }
-					>
-						<img className='portfolio-image' alt='kai-cao' src={ Kai } />
-					</Pose>
-				</SlideDown>
+					<img className='portfolio-image' alt='kai-cao' src={ Kai } />
+				</Pose>
 				<SlideUp
 					className='right-half'
 					pose={ isMounted ? 'final' : 'init' }
