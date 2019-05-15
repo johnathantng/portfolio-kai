@@ -4,12 +4,10 @@ import './Navigation.css';
 //IMAGES IMPORT
 import MenuIcon from '../../images/nav/hamburger.png';
 import HamburgerBite from '../../images/nav/hamburger-bite.png';
+import BackArrow from '../../images/nav/arrowbrown.png';
 
 //COMPONENTS IMPORT
 import Sidebar from '../../components/Pose/Sidebar/Sidebar';
-
-//POSE IMPORT
-import Pose from '../../components/Pose/Pose';
 
 class Navigation extends Component {
 	constructor(props){
@@ -38,7 +36,12 @@ class Navigation extends Component {
 		const { onRouteChange } = this.props;
 		return(
 			<div>
-				<Pose>
+					<img
+						className='back-arrow'
+						onClick={ () => onRouteChange('home') }
+						alt='back-arrow'
+						src={ BackArrow }
+					/>
 					<img 
 						id='hamburger'
 						onClick={ this.buttonClick }
@@ -46,7 +49,6 @@ class Navigation extends Component {
 						alt='hamburger' 
 						src={ MenuIcon } 
 					/>
-				</Pose>
 				<Sidebar 
 					style={{ overflowX: 'hidden' }}
 					items={ this.state.items } 
