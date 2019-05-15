@@ -1,8 +1,11 @@
-html {
-	overflow: hidden;
-}
 body{
 	margin: 0;
 	font-family: acumin-pro-light, sans-serif;
 	font-size: 100%;
+	overflow: hidden;
+}
+@media (max-width: 520px){
+	body{
+		overflow: hidden;
+	}
 }

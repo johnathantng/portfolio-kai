@@ -48,21 +48,29 @@
 }
 /*FOR PHONES*/
 @media (max-width: 520px) {
+	#information-heading{
+		width: 100%!important;
+		text-align: center!important;
+	}
 	#information-text{
 		font-size: .5em!important;
 		text-align: center!important;
+		width: 100%!important;
 	}
 	.about-me-container{
 		flex-direction: column;
+		height: 600px;
+		overflow: hidden;
 	}
 	.left-half{
-		height: 40vh;
+		height: 200px!important;
 	}
 	.right-half{
-		height: 50vh;
+		height: 500px!important;
 		width: 100%;
+		background: #C2C8DE;
 	}
 	.information-container{
-		padding: 100px;
+		padding: 10px!important;
 	}
 }

@@ -1,0 +1,8 @@
+.site-wrapper{
+	overflow: hidden!important;
+}
+@media (max-width: 520px){
+	.site-wrapper{
+		max-width: 100px;
+	}
+}

@@ -17,13 +17,15 @@
 }
 p{
 	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 /*FOR PHONES*/
 @media (max-width: 520px) {
 	.navbar-container{
-		width: 45%;
-		align-items: flex-end;
-		padding-right: 100px;
+		width: 100%;
+		align-items: center;
+		padding-right: 50px;
+		height: 300px;
 	}
 	.navbar-list{
 		font-size: 1em; 
