@@ -57,16 +57,19 @@
 		text-align: center!important;
 	}
 	#social-icons{
-		width: 50%!important;
+		width: 30%!important;
 	}
 	.contact-container{
 		flex-direction: column;
 	}
 	.contact-left-half{
-		height: 20vh;
+		height: 100px;
+		width: 75%;
+		margin-right: 150px;
+		margin-bottom: 10px;
 	}
 	.contact-right-half{
-		height: 70vh;
+		height: 60vh;
 		width: 100%;
 	}
 	.information-container{
