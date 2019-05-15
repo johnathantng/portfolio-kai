@@ -3,6 +3,9 @@ body{
 	font-family: acumin-pro-light, sans-serif;
 	font-size: 100%;
 	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	position: fixed;
 }
 @media (max-width: 520px){
 	body{

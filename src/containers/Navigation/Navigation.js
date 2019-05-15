@@ -48,6 +48,7 @@ class Navigation extends Component {
 					/>
 				</Pose>
 				<Sidebar 
+					style={{ overflowX: 'hidden' }}
 					items={ this.state.items } 
 					isVisible={ this.state.isVisible }
 					onRouteChange={ onRouteChange }
