@@ -50,13 +50,13 @@ class Form extends Component {
 	return(
 		<form className="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
 		  <label className="field-name" htmlFor="message-name">name</label>
-		  <input onChange={e => this.setState({ name: e.target.value})} name="name" className="name-input" type="text" placeholder="contact name" value={this.state.name}/>
+		  <input onChange={e => this.setState({ name: e.target.value})} name="name" className="name-input" type="text" placeholder="Name" value={this.state.name}/>
 
 		  <label className="field-name" htmlFor="message-email">email</label>
-		  <input onChange={(e) => this.setState({ email: e.target.value})} name="email" className="name-input" type="email" placeholder="example@email.com" required value={this.state.email} />
+		  <input onChange={(e) => this.setState({ email: e.target.value})} name="email" className="name-input" type="email" placeholder="Email" required value={this.state.email} />
 
 		  <label className="field-name" htmlFor="message-input">message</label>
-		  <textarea onChange={e => this.setState({ message: e.target.value})} name="message" className="message-input" type="text" placeholder="please write your message here" value={this.state.message} required/>
+		  <textarea onChange={e => this.setState({ message: e.target.value})} name="message" style={{ fontFamily: 'acumin-pro' }}className="message-input" type="text" placeholder="Please write your message here" value={this.state.message} required/>
 
 		  <div className="button-container">
 		      <button id='submit-button' type="submit" className="form-button">{ this.state.buttonText }</button>

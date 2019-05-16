@@ -1,6 +1,7 @@
 #social-icons{
 	align-self: flex-end;
 	width: 22%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 #information-heading{
 	font-size: 2em;
@@ -65,7 +66,7 @@
 	.contact-left-half{
 		height: 100px;
 		width: 75%;
-		margin-right: 150px;
+		margin-right: 50px;
 		margin-bottom: 10px;
 	}
 	.contact-right-half{
