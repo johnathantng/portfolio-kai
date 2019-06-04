@@ -13,7 +13,8 @@ import CrueltyFreeCaption from '../../images/work/captions/crueltyfree-caption.p
 import CrueltyFreeThumbnail from '../../images/work/thumbnails/crueltyfree.png';
 import YelortCaption from '../../images/work/captions/yelort-caption.png';
 import YelortThumbnail from '../../images/work/thumbnails/yelort.png';
-import BoxSeven from '../../images/home/decor-black.png';
+import LuneCaption from '../../images/work/captions/lune-caption.png';
+import LuneThumbnail from '../../images/work/thumbnails/lune.png';
 import CeramicsCaption from '../../images/work/captions/ceramics-caption.png';
 import CeramicsThumbnail from '../../images/work/thumbnails/ceramics.png';
 import BoxNine from '../../images/home/decor-blue.png';
@@ -95,10 +96,13 @@ class Work extends Component {
 						stateRoute={ 'work' }
 					/>
 					<Card 
-						cardStyle={{ backgroundImage: 'url(' + BoxSeven + ')', backgroundSize: 'cover' }}
-						visibility={{ visibility: 'hidden' }}
+						cardStyle={{ background: 'url(' + LuneThumbnail + ')', backgroundSize: 'cover', cursor: 'pointer' }}
+						visibility={{ width: '100%'}}
+						cardImage={ LuneCaption }
+						poseAnimationInit={ 'invisible' }
+						poseAnimationFinal={ 'visible' }
 						onRouteChange={ onRouteChange }
-						behanceLink={ '' }
+						behanceLink={ 'https://www.behance.net/gallery/80739897/LUNE-Period-Tracker-App' }
 						route={ 'home' }
 						stateRoute={ 'work' }
 					/>
